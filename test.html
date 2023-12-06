@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="main.js"></script> -->
+    <title>TEST - collapsing navbar and menu</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="container-header">
+            <div class="container-header-nav-left">
+                <img class="container-header-nav-left-img" src="images/logo.svg" alt="company logo - sneakers">
+                <div class="container-header-hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="container-header-nav">
+                <ol class="container-header-nav-left-ol">
+                    <li class="container-header-nav-left-ol-li"><a class="container-header-nav-left-ol-li-a"
+                            href="">Collections</a></li>
+                    <li class="container-header-nav-left-ol-li"><a class="container-header-nav-left-ol-li-a"
+                            href="">Men</a></li>
+                    <li class="container-header-nav-left-ol-li"><a class="container-header-nav-left-ol-li-a"
+                            href="">Women</a></li>
+                    <li class="container-header-nav-left-ol-li"><a class="container-header-nav-left-ol-li-a"
+                            href="">About</a></li>
+                    <li class="container-header-nav-left-ol-li"><a class="container-header-nav-left-ol-li-a"
+                            href="">Contact</a></li>
+                </ol>
+            </nav>
+        </header>
+        <div class="container-menu">
+            <div class="container-menu-close-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <ol class="container-menu-ol">
+                <li class="container-menu-li"><a class="container-menu-li-a" href="">Collections</a></li>
+                <li class="container-menu-li"><a class="container-menu-li-a" href="">Men</a></li>
+                <li class="container-menu-li"><a class="container-menu-li-a" href="">Women</a></li>
+                <li class="container-menu-li"><a class="container-menu-li-a" href="">About</a></li>
+                <li class="container-menu-li"><a class="container-menu-li-a" href="">Contact</a></li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        const hamburgerMenu = document.querySelector('.container-header-hamburger-menu');
+        const menu = document.querySelector('.container-menu');
+        const closeBtn = document.querySelector('.container-menu-close-btn');
+    
+        hamburgerMenu.addEventListener('click', () => {
+          menu.classList.toggle('open');
+        });
+    
+        closeBtn.addEventListener('click', () => {
+          menu.classList.remove('open');
+        });
+      </script>
+</body>
+
+</html>
