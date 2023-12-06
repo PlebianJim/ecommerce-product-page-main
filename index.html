@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <section class="nav-container">
+      <h1 class="nav-menu-company-name">sneakers</h1>
+      <nav class="nav-menu-container">
+        <ol class="nav-menu-ol">
+          <li class="nav-menu-li"><a class="nav-menu-li-a" href="">Collections</a></li>
+          <li class="nav-menu-li"><a class="nav-menu-li-a" href="">Men</a></li>
+          <li class="nav-menu-li"><a class="nav-menu-li-a" href="">Women</a></li>
+          <li class="nav-menu-li"><a class="nav-menu-li-a" href="">About</a></li>
+          <li class="nav-menu-li"><a class="nav-menu-li-a" href="">Contact</a></li>
+        </ol>
+      </nav>
+      <div class="nav-menu-images">
+        <img class="nav-menu-cart-icon" src="images/icon-cart.svg" alt="cart icon">
+        <img class="nav-menu-pfp" src="images/image-avatar.png" alt="profile-picture">
+      </div>
+    </section>
+    <section class="product-container">
+      <section class="image-container">
+        <div class="large-image-modal">
+          <img class="large-image-modal-image" src="images/image-product-1.jpg" alt="">
+        </div>
+        <div class="small-image-container">
+          <img class="small-image-container-option" src="images/image-product-1-thumbnail.jpg" alt="">
+          <img class="small-image-container-option" src="images/image-product-2-thumbnail.jpg" alt="">
+          <img class="small-image-container-option" src="images/image-product-3-thumbnail.jpg" alt="">
+          <img class="small-image-container-option" src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </section>
+      <section class="description-container">
+        <h1 class="description-container-h1">SNEAKER COMPANY</h1>
+        <h2 class="description-product-title">Fall Limited Edition Sneakers</h2>
+        <p class="description-product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they'll withstand everything the weather can offer.</p>
+        <div class="price-container">
+          <p class="price-container-price-p">$125.00</p>
+          <p class="price-container-discount-p">50%</p>
+        </div>
+        <p class="price-container-original-p">£250.00</p>
+        <div class="amount-container">
+          <button><img src="images/icon-minus.svg" alt=""></button>
+          <input type="number" placeholder="0">
+          <button><img src="images/icon-plus.svg" alt=""></button>
+          <button><img src="images/icon-cart.svg" alt="">Add to cart</button>
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+
+</html>
