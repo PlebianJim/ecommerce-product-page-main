@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js" defer></script>
     <title>TEST - collapsing navbar and menu</title>
 </head>
 
@@ -55,19 +55,6 @@
             </ol>
         </div>
     </div>
-    <script>
-        const hamburgerMenu = document.querySelector('.container-header-hamburger-menu');
-        const menu = document.querySelector('.container-menu');
-        const closeBtn = document.querySelector('.container-menu-close-btn');
-    
-        hamburgerMenu.addEventListener('click', () => {
-          menu.classList.toggle('open');
-        });
-    
-        closeBtn.addEventListener('click', () => {
-          menu.classList.remove('open');
-        });
-      </script>
 </body>
 
 </html>
